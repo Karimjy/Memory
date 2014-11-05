@@ -1,0 +1,23 @@
+{
+  "name": "memory",
+  "version": "0.0.0",
+  "authors": [
+    "irfann <irfann.karimjy@gmail.com>"
+  ],
+  "description": "Memory",
+  "keywords": [
+    "memory"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "https://github.com/jquery/jquery"
+  }
+}
