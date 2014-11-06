@@ -4,6 +4,8 @@ $(document).ready(function(){
 
 	var memory = {
 		check : [],
+		cpt : 0,
+
 		add : function(nb){
 			var tabRandom = [];
 			for (var i = 0; i < nb; i+=2) {
@@ -31,10 +33,12 @@ $(document).ready(function(){
 
 		game : function(event){
 			var that = this;
-			var cpt = 0;
+			var compteur = $(document.createElement('p')).appendTo('.compteur');
+			compteur.text("Nombre de cliques : " + that.cpt);
 			$(".carte").click(function(event){
 				var event = event.currentTarget;
-				cpt++;
+				that.cpt+=1;
+				console.log(that.cpt);
 				if (that.check.length <= 2 ) {
 					if($(event).find(".hide").is(":visible")){
 						$(event).find(".hide").hide();
@@ -67,13 +71,14 @@ $(document).ready(function(){
 						that.check = [];
 					}, 1000);
 				};
+				compteur.text("Nombre de cliques : " + that.cpt);
 			});
+			
+			
 		}
 	};
  
 	memory.add(6);
 	memory.hideAll();
 	memory.game(event);
-
-	
 });
