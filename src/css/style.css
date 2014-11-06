@@ -1,8 +1,29 @@
+@font-face {
+    font-family: 'mickey';
+    src: url('../fonts/mickey-webfont.eot') format('eot'),
+         url('../fonts/mickey-webfont.woff') format('woff'),
+         url('../fonts/mickey-webfont.ttf') format('truetype'),
+         url('../fonts/mickey-webfont.svg') format('svg');
+}
+
+body{
+	font-family: 'mickey';
+	background-image: url("../img/memory.jpg");
+}
+
+.cartes{
+	display: block;
+}
+
 .carte{
 	height: 117px;
 	width: 116px;
-	margin: 10px;
+	margin: 5px;
 	float: left;
+}
+
+.memo, .hide{
+	border: 3px solid grey;
 }
 
 .hide{
@@ -11,6 +32,10 @@
 	background: black;
 }
 
-.memo{
-	/*display: none;*/
+.compteur{
+	float: left;
+}
+
+p{
+	font-size: 55px;
 }

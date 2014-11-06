@@ -73,8 +73,6 @@ $(document).ready(function(){
 				};
 				compteur.text("Nombre de cliques : " + that.cpt);
 			});
-			
-			
 		}
 	};
  
